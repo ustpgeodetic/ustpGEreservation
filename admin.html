@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Equipment Reservations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Admin Dashboard</h1>
+
+    <section class="card">
+      <h2>Admin Login</h2>
+      <label>Email
+        <input type="email" id="admin_email" />
+      </label>
+      <label>Password
+        <input type="password" id="admin_password" />
+      </label>
+      <div class="row">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" type="button">Logout</button>
+      </div>
+      <p id="authMessage"></p>
+    </section>
+
+    <section class="card">
+      <h2>Reservations</h2>
+      <button id="refreshBtn">Refresh</button>
+      <div id="tableWrap"></div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

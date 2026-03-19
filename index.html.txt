@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Equipment Reservation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Lab Equipment Reservation</h1>
+    <p>Department of Geodetic Engineering Laboratory</p>
+
+    <form id="reservationForm" class="card">
+      <label>Full Name
+        <input type="text" id="full_name" required />
+      </label>
+
+      <label>Student ID
+        <input type="text" id="student_id" />
+      </label>
+
+      <label>Section / Year
+        <input type="text" id="section" />
+      </label>
+
+      <label>Contact Number
+        <input type="text" id="contact_number" />
+      </label>
+
+      <label>Email
+        <input type="email" id="email" />
+      </label>
+
+      <label>Equipment
+        <select id="equipment" required>
+          <option value="">Select equipment</option>
+          <option>Total Station</option>
+          <option>Automatic Level</option>
+          <option>GNSS Receiver</option>
+          <option>Prism</option>
+          <option>Tripod</option>
+          <option>Range Pole</option>
+          <option>Drone</option>
+        </select>
+      </label>
+
+      <label>Quantity
+        <input type="number" id="quantity" min="1" value="1" required />
+      </label>
+
+      <label>Date Needed
+        <input type="date" id="date_needed" required />
+      </label>
+
+      <label>Start Time
+        <input type="time" id="time_start" required />
+      </label>
+
+      <label>End Time
+        <input type="time" id="time_end" required />
+      </label>
+
+      <label>Purpose
+        <textarea id="purpose" rows="4" placeholder="Lab exercise / thesis / fieldwork"></textarea>
+      </label>
+
+      <button type="submit">Submit Reservation</button>
+      <p id="message"></p>
+    </form>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
